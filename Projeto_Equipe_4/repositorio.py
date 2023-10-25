@@ -5,7 +5,7 @@ usuarios = {
     "nome": "Tiago",
     "sobrenome": "Santos",
     "email": "tiago@gmail.com",
-    "nascimento": "12/01/1999",
+    "idade": 23,
     "cidade": "Salvador",
     "senha": "1234",
     "imagem": "/static/img/perfil_6.png"
@@ -15,7 +15,7 @@ usuarios = {
     "nome": "Ana",
     "sobrenome": "Oliveira",
     "email": "ana@gmail.com",
-    "nascimento": "12/08/1998",
+    "idade": 25,
     "cidade": "Fortaleza",
     "senha": "1234",
     "imagem": "/static/img/perfil_2.png"
@@ -25,7 +25,7 @@ usuarios = {
     "nome": "Ester",
     "sobrenome": "Santana",
     "email": "ester@gmail.com",
-    "nascimento": "17/10/1995",
+    "idade": 27,
     "cidade": "Belo Horizonte",
     "senha": "1234",
     "imagem": "/static/img/perfil_5.png"
@@ -35,7 +35,7 @@ usuarios = {
     "nome": "Luiza",
     "sobrenome": "Andrade",
     "email": "luiza@gmail.com",
-    "nascimento": "27/03/1985",
+    "idade": 38,
     "cidade": "Rio de Janeiro",
     "senha": "1234",
     "imagem": "/static/img/perfil_4.png"
@@ -45,7 +45,7 @@ usuarios = {
     "nome": "Carlos",
     "sobrenome": "Miranda",
     "email": "carlos@gmail.com",
-    "nascimento": "09/03/1986",
+    "idade": 37,
     "cidade": "São Paulo",
     "senha": "1234",
     "imagem": "/static/img/perfil_7.png"
@@ -59,12 +59,12 @@ def gerar_id():
     return id
 
 #Cria um usuário
-def criar_usuario(nome, sobrenome, email, nasciemnto, cidade, senha):
+def criar_usuario(nome, sobrenome, email, idade, cidade, senha):
     usuarios[gerar_id()] = {
         "nome": nome,
         "sobrenome": sobrenome,
         "email": email,
-        "nascimento": nasciemnto,
+        "idade": idade,
         "cidade": cidade,
         "senha": senha
     }

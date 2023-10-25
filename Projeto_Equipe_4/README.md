@@ -8,5 +8,4 @@
 - Criar repositório no Git
 - Criar proteção das branchs
 - Reunir para nivelar
-
-Trocar "data de nascimento" por "idade"
+- Trocar "data de nascimento" por "idade" (Pronto)
