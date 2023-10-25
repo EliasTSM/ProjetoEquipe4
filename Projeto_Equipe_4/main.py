@@ -22,7 +22,7 @@ def cadastro():
         usuario['nome'] = request.form["nome"]
         usuario['sobrenome'] = request.form["sobrenome"]
         usuario['email'] = request.form["email"]
-        usuario['nascimento'] = request.form["nascimento"]
+        usuario['idade'] = request.form["idade"]
         usuario['cidade'] = request.form["cidade"]
         usuario['senha'] = request.form["senha"]
         repositorio.criar_usuario(**usuario)
@@ -49,7 +49,7 @@ def editar(id):
         usuario['nome'] = request.form["nome"]
         usuario['sobrenome'] = request.form["sobrenome"]
         usuario['email'] = request.form["email"]
-        usuario['nascimento'] = request.form["nascimento"]
+        usuario['idade'] = request.form["idade"]
         usuario['cidade'] = request.form["cidade"]
         usuario['senha'] = request.form["senha"]
 
